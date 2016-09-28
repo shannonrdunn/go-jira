@@ -75,7 +75,7 @@ type IssueFields struct {
 	Resolution        *Resolution   `json:"resolution,omitempty"`
 	Priority          *Priority     `json:"priority,omitempty"`
 	Resolutiondate    string        `json:"resolutiondate,omitempty"`
-	EpicLink   	  []string      `json:"customfield_10006,omitempty"`
+	EpicLink   	  string      `json:"customfield_10006,omitempty"`
 	EpicName   	  string        `json:"customfield_10005,omitempty"`
 	Created           string        `json:"created,omitempty"`
 	Watches           *Watches      `json:"watches,omitempty"`
