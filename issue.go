@@ -31,6 +31,12 @@ type Issue struct {
 	Fields *IssueFields `json:"fields,omitempty"`
 }
 
+// Parent represents an issue parent.
+type Parent struct {
+	ID     string       `json:"id,omitempty"`
+	Key    string       `json:"key,omitempty"`
+}
+
 // Attachment represents a JIRA attachment
 type Attachment struct {
 	Self      string `json:"self,omitempty"`
@@ -83,7 +89,7 @@ type IssueFields struct {
 	Updated           string        `json:"updated,omitempty"`
 	Description       string        `json:"description,omitempty"`
 	Summary           string        `json:"summary"`
-	Parent		  string	`json:"parent,omitempty"`
+	Parent		  Parent	`json:"parent,omitempty"`
 	Creator           *User         `json:"Creator,omitempty"`
 	Reporter          *User         `json:"reporter,omitempty"`
 	Components        []*Component  `json:"components,omitempty"`
