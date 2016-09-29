@@ -83,7 +83,7 @@ type IssueFields struct {
 	Updated           string        `json:"updated,omitempty"`
 	Description       string        `json:"description,omitempty"`
 	Summary           string        `json:"summary"`
-	Parent		  string	`json:"parent"`
+	Parent		  string	`json:"parent,omitempty"`
 	Creator           *User         `json:"Creator,omitempty"`
 	Reporter          *User         `json:"reporter,omitempty"`
 	Components        []*Component  `json:"components,omitempty"`
