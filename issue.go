@@ -94,6 +94,7 @@ type IssueFields struct {
 	Reporter          *User         `json:"reporter,omitempty"`
 	Components        []*Component  `json:"components,omitempty"`
 	Status            *Status       `json:"status,omitempty"`
+	StoryPoints	  int		`json:"customfield_10002,omitempty"`
 	Progress          *Progress     `json:"progress,omitempty"`
 	AggregateProgress *Progress     `json:"aggregateprogress,omitempty"`
 	Worklog           *Worklog      `json:"worklog,omitempty"`
