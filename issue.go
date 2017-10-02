@@ -76,6 +76,7 @@ type IssueFields struct {
 	//	* "aggregatetimeestimate": null,
 	//	* "environment": null,
 	//	* "duedate": null,
+	Acceptance        string        `json:"customfield_11516,omitempty"`
 	Type              IssueType     `json:"issuetype"`
 	Project           Project       `json:"project,omitempty"`
 	Resolution        *Resolution   `json:"resolution,omitempty"`
