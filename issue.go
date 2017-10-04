@@ -448,7 +448,7 @@ func (s *IssueService) Create(issue *Issue) (*Issue, *Response, error) {
 	if err != nil {
 		return nil, nil, err
 	}
-	fmt.Println(req)
+	fmt.Println(req.Body)
 	responseIssue := new(Issue)
 	resp, err := s.client.Do(req, responseIssue)
 	if err != nil {
