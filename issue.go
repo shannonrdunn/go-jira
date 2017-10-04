@@ -445,7 +445,6 @@ func (s *IssueService) PostAttachment(attachmentID string, r io.Reader, attachme
 func (s *IssueService) Create(issue *Issue) (*Issue, *Response, error) {
 	apiEndpoint := "rest/api/2/issue/"
 	req, err := s.client.NewRequest("POST", apiEndpoint, issue)
-	fmt.println(req)
 	if err != nil {
 		return nil, nil, err
 	}
