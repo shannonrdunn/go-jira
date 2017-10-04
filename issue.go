@@ -84,7 +84,7 @@ type IssueFields struct {
 	Resolutiondate    string        `json:"resolutiondate,omitempty"`
 	EpicLink   	  string      `json:"customfield_10006,omitempty"`
 	EpicName   	  string        `json:"customfield_10005,omitempty"`
-	EMR		  []string	`json:"customfield_11700,omitempty"`
+	EMR		  []map[string]string	`json:"customfield_11700,omitempty"`
 	Created           string        `json:"created,omitempty"`
 	Watches           *Watches      `json:"watches,omitempty"`
 	Assignee          *User         `json:"assignee,omitempty"`
